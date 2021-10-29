@@ -1,0 +1,479 @@
+/* defaults */
+body {
+    background: #eee
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input{
+    box-shadow: none !important;
+}
+
+.btn-orange {
+    border: 1px solid #FE9F4B !important;
+    color: #fff;
+    height: 40px;
+    background-color: #FE9F4B
+}
+
+.light-orange {
+    background-color: #fff7f0
+}
+
+.text-orange {
+    color: #FE9F4B;
+}
+
+.fonts {
+    font-size: 11px
+}
+
+.active {
+    color: #fff;
+    background-color: #FE9F4B !important;
+}
+
+.btn-outline-orange {
+    color: #FE9F4B;
+    border-color: #FE9F4B;
+}
+
+.btn-outline-orange:hover {
+    color: #fff;
+    background-color: #FE9F4B;
+    border: #FE9F4B 1px solid;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+button{
+    box-shadow: none !important;
+}
+
+/* profile Card */
+.card {
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #ffcca0;
+    transform: scaleY(1);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #FE9F4B;
+    transform: scaleY(0);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after {
+    transform: scaleY(1)
+}
+
+/* Social Icons */
+.social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0
+}
+
+.social-list li {
+    padding: 10px;
+    color: #FE9F4B;
+    font-size: 19px;
+    background-color: #ffefe1;
+    margin: 0px 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+ul.social-list li:hover{
+    color: rgb(156, 156, 156);
+}
+
+/* Profile buttons */
+.buttons button:nth-child(1) {
+    border: 1px solid #FE9F4B !important;
+    color: #FE9F4B;
+    height: 40px
+}
+
+.buttons button:nth-child(1):hover {
+    border: 1px solid #FE9F4B !important;
+    color: #fff;
+    height: 40px;
+    background-color: #FE9F4B
+}
+
+.buttons button:nth-child(2) {
+    border: 1px solid #FE9F4B !important;
+    background-color: #FE9F4B;
+    color: #fff;
+    height: 40px
+}
+
+/* Modal 3 */
+#exampleModalToggle3 .categories .item{
+    background-color: #ffcca0;
+    color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    transition: all .5s ease-in-out;
+}
+
+#exampleModalToggle3 .pick-meal{
+    background-color: #FE9F4B;
+    color: white;
+    text-align: center;
+}
+
+#exampleModalToggle3 .categories .item:hover {
+    background-color: #FE9F4B;
+}
+
+/* Modal Content */
+#content .item{
+    background-color: rgba(0, 0, 0, 0.041);
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+#content .item:hover{
+    background-color: rgba(226, 62, 62, 0.041);
+}
+
+#content .item.toggle::after{
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 3%;
+    right: 6%;
+    color: #FE9F4B;
+}
+
+/* CALENDAR CSS */
+table {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    font-family: 'Ubuntu';
+    border-spacing: 0;
+    background-color: #333333;
+}
+
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #292929;
+    letter-spacing: 1px;
+}
+
+td {
+    width: 14.285%;
+    transition: all 0.3s;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 1.5% 1.5% 5%;
+    vertical-align: initial;
+    padding: 1.5% 0;
+    height: 75px;
+}
+
+.day:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Current day */
+.today {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .25) !important;
+}
+
+span.number {
+    margin-left: 10%
+}
+
+span.event {
+    height: 4px;
+    background-color: rgba(0, 0, 0, .3);
+    display: block;
+    margin: 5px 10%;
+    border-radius: 2px;
+    background-color: #91c33b;
+}
+
+span.event-multiday {
+    margin: 5px -2px;
+    border-radius: 0;
+}
+
+span.event-multiday-start {
+    margin-right: -4px;
+}
+
+span.event-multiday-finish {
+    margin-left: -4px;
+}
+
+span.event-ghost {
+    background-color: transparent;
+}
+
+.day-name {
+    text-align: center;
+}
+
+/* Modal 4 */
+/* incrase & decrease buttons */
+.more .input-group {
+    width: 190px;
+    margin: auto;
+}
+
+.more .form-control {
+    border: none;
+    padding: 0;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+}
+
+.more .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.more .counter {
+    color: #fff;
+    width: 33px;
+    height: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
+    background-color: #FFA54C;
+    font-size: 15px;
+    outline: none;
+    border-radius: 4px;
+    padding: 0px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: rotateY(20deg);
+    transform: rotateY(20deg);
+}
+
+.more .btn-number:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ImgContainer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Responsive media query */
+
+@media all and (max-width:992px) {
+    .ImgContainer img{
+        width: 40px !important;
+    }
+    .ImgContainer{
+        top: 25px;
+    }
+}
+
+@media all and (max-width:600px) {
+    .switchToggle label {
+        width: 50px !important;
+        max-width: 50px !important;
+        font-size: 12px;
+    }
+
+    .toggle-header{
+        font-size: 12px;
+    }
+
+    .switchToggle input:checked+label:before,
+    .switchToggle input:checked+input+label:before {
+        left: 0px !important;
+    }
+
+    .switchToggle input+label:before,
+    .switchToggle input+input+label:before {
+        left: 25px !important;
+    }
+
+    .day-name{
+        font-size: 7px !important;
+    }
+}
+
+@media all and (max-width:500px) {
+    .toggle-content{
+        right: 0 !important;
+    }
+}
+
+/* Toggle plan */
+.switchToggle input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.switchToggle label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    max-width: 70px;
+    height: 30px;
+    background: #FFD9B7;
+    border-radius: 100px;
+    position: relative;
+}
+
+.switchToggle label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.switchToggle input:checked+label,
+.switchToggle input:checked+input+label {
+    background: #d1d1d1;
+}
+
+.switchToggle input+label:before,
+.switchToggle input+input+label:before {
+    content: 'On';
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+}
+
+.switchToggle input:checked+label:before,
+.switchToggle input:checked+input+label:before {
+    content: 'Off';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+}
+
+.switchToggle input:checked+label:after,
+.switchToggle input:checked+input+label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+
+.switchToggle label:active:after {
+    width: 60px;
+}
+
+.toggle-switchArea {
+    margin: 10px 0 10px 0;
+}
+
+/* restrict */
+.btn-glyphicon { 
+    padding:8px;
+    background:#ffffff; 
+    margin-right:4px; 
+    border-radius: 50%;
+    color: #FFD9B7;
+    transition: all 0.2s;
+}
+.icon-btn { 
+    padding: 1px 15px 3px 2px;
+    border-radius:50px;
+}
+.btn-restrict{
+    background-color: #FFD9B7;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.btn-restrict:hover .btn-glyphicon {
+    color: #FE9F4B;
+}
+
+.btn-restrict:hover {
+    color: #FE9F4B;
+    background-color: #fff;
+    border: 1px solid #FE9F4B;
+}
